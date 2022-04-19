@@ -11,6 +11,6 @@ export default async function getImg(req: VercelRequest, res: VercelResponse) {
         let stream = await generateQRStream(text)
         return res.send(stream)
     } catch (error) {
-        return res.status(500)
+        return res.status(500);
     }
 }
